@@ -1,0 +1,75 @@
+body {
+    background-color: bisque;
+}
+
+.image-accueil {
+    width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+#texte-accueil {
+    font-size: 70px;
+}
+
+/* https://stackoverflow.com/questions/17481660/darken-background-image-on-hover */
+.miniature {
+    filter: brightness(100%);
+}
+
+.miniature:hover {
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-description {
+    width: 25rem;
+}
+
+.sous-texte-lien {
+    font-size: 30px;
+}
+
+.logo {
+    height: 300px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    font-size: 1.5rem;
+}
